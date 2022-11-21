@@ -1,1 +1,20 @@
+ubuntu コンテナ作成、起動、停止
 
+１.イメージの確認をする
+docker images
+REPOSITORY                                                TAG                                                                          IMAGE ID       CREATED         SIZE
+ubuntu                                                    latest                                                                       3c2df5585507   2 weeks ago     69.2MB
+ubuntu                                                    18.04                                                                        2d07c6c16e27   3 weeks ago     56.7MB
+nginx                                                     latest                                                                       df36ec2d82e6   4 weeks ago     135MB
+（省略）
+
+2.イメージを取得する
+$ docker pull ubuntu
+取得が終わったらもう一度１のコマンドを入力して無事イメージを作ることができたかを確認する。
+
+3.コンテナを作成する
+ $ docker ps
+ 
+CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS             PORTS     NAMES
+70ddbaae8d12   2edf9c994f19           "/kube-vpnkit-forwar…"   16 minutes ago   Up 16 minutes                k8s_vpnkit-controller_vpnkit-controller_kube-system_b6a39451-0bda-4da0-9893-ff1dc883d1c1_173
+cbbfe2bf2d54   c027a58fa0bb           "/storage-provisione…"   2 hours ago
