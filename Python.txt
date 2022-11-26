@@ -60,3 +60,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> print("Hello World")
 実行結果：
 Hello World
+
+7.Pythonを停止させる
+>>> exit()
+
+実行結果：
+root@267e441941fa:/Python-3.9.2# 
