@@ -46,3 +46,17 @@ root@6c715f176372:/Python-3.9.2#
 $ which python3
 /usr/local/bin/python3
 
+
+5.Pythonを起動する
+ターミナルに　python3　と入力する
+
+実行結果：
+Python 3.9.2 (default, Nov 26 2022, 19:28:32) 
+[GCC 7.5.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+
+6.試しに「Hello World」を表示させる
+
+>>> print("Hello World")
+実行結果：
+Hello World
