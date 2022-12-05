@@ -1,0 +1,12 @@
+OpenPyXLをインストールする
+
+pip install openpyxl
+ーー実行結果ーー
+Collecting openpyxl
+  Downloading openpyxl-3.0.10-py2.py3-none-any.whl (242 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 242.1/242.1 kB 7.9 MB/s eta 0:00:00
+Collecting et-xmlfile
+  Downloading et_xmlfile-1.1.0-py3-none-any.whl (4.7 kB)
+Installing collected packages: et-xmlfile, openpyxl
+Successfully installed et-xmlfile-1.1.0 openpyxl-3.0.10
+(env) root@35dc0118458c:/# 
