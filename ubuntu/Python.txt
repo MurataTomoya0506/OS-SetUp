@@ -1,0 +1,68 @@
+ wgetコマンドをインストール
+# apt install wget
+
+ sudoをインストール
+#apt-get install sudo
+ 
+ 
+1.ビルド環境の準備する（必要なツールをインストール）
+
+$ apt update
+$ sudo apt install build-essential libbz2-dev libdb-dev \
+  libreadline-dev libffi-dev libgdbm-dev liblzma-dev \
+  libncursesw5-dev libsqlite3-dev libssl-dev \
+  zlib1g-dev uuid-dev tk-dev
+
+2.ソースコードをダウンロードする
+https://pythonlinks.python.jp/ja/index.html
+上記のサイトからPythonのソースコードをダウンロード
+
+ターミナルからインストールする
+/# wget https://www.python.org/ftp/python/3.9.2/Python-3.9.13.tar.xz
+
+ダウンロードしたファイルを解凍する
+tar xJf Python-3.9.2.tar.xz
+
+3.ビルドする
+
+$ cd Python-3.9.2
+$ ./configure
+$ make
+$  make install
+
+インストールが完了したら下記のような表示が出る
+
+（省略）
+Looking in links: /tmp/tmptq6lx706
+Requirement already up-to-date: setuptools in /usr/local/lib/python3.9/site-packages (49.2.1)
+Requirement already up-to-date: pip in /usr/local/lib/python3.9/site-packages (20.2.3)
+
+
+4.正常にインストールされたか確認する
+
+$ python3 -V
+root@6c715f176372:/Python-3.9.2# 
+
+$ which python3
+/usr/local/bin/python3
+
+
+5.Pythonを起動する
+ターミナルに　python3　と入力する
+
+実行結果：
+Python 3.9.2 (default, Nov 26 2022, 19:28:32) 
+[GCC 7.5.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+
+6.試しに「Hello World」を表示させる
+
+>>> print("Hello World")
+実行結果：
+Hello World
+
+7.Pythonを停止させる
+>>> exit()
+
+実行結果：
+root@267e441941fa:/Python-3.9.2# 

@@ -1,0 +1,20 @@
+
+# pipを使ってOpenCV のインストールする
+
+１.インストール<br>
+~~~sh
+pip install opencv-contrib-python
+~~~
+
+<span style="color: red; ">ーー実行結果ーー</span><br>
+~~~sh
+Collecting opencv-contrib-python
+  Downloading opencv_contrib_python-4.6.0.66-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (67.1 MB)
+     |████████████████████████████████| 67.1 MB 19.6 MB/s 
+Requirement already satisfied: numpy>=1.14.5; python_version >= "3.7" in /env/lib/python3.9/site-packages (from opencv-contrib-python) (1.23.5)
+Installing collected packages: opencv-contrib-python
+Successfully installed opencv-contrib-python-4.6.0.66
+WARNING: You are using pip version 20.2.3; however, version 22.3.1 is available.
+You should consider upgrading via the '/env/bin/python3 -m pip install --upgrade pip' command.
+~~~
+以上でOpen CVがインストールできた
